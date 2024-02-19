@@ -9,7 +9,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: TerraformCLI@2
+- task: TerraformCLI@0
   displayName: Terraform Init
   inputs:
     command: 'init'
@@ -17,7 +17,7 @@ steps:
 
 
 
-- task: TerraformCLI@2
+- task: TerraformCLI@0
   displayName: Terraform Plan
   inputs:
     command: 'plan'
